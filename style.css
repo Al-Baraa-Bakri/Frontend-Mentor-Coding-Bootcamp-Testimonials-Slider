@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 55px auto;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateX(4.5rem);
+  -webkit-transform: translateX(4.5rem);
+  -moz-transform: translateX(4.5rem);
+  -ms-transform: translateX(4.5rem);
+  -o-transform: translateX(4.5rem);
+  gap: 40px;
+  /*z-index: 100;
+  */
+  overflow: hidden;
+  z-index: 4;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+main .content .text {
+  max-width: 1458px;
+}
+main .content .text p {
+  font-size: 32px;
+  font-weight: 300;
+  color: rgb(60, 60, 93);
+  line-height: 45px;
+}
+main .content .job span {
+  color: rgb(33, 33, 71);
+  font-weight: 800;
+  font-size: 20px;
+  padding-right: 5px;
+}
+main .content .job p {
+  color: rgb(186, 186, 207);
+  font-size: 20px;
+  font-weight: 500;
+}
+main .slider {
+  /* z-index: -1; */
+}
+.parent {
+  max-width: 530px;
+  margin: auto;
+  overflow: hidden;
+}
+main .slider .inner-slider {
+  display: flex;
+  width: 100%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+main .slider .button {
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  transform: translate(50px, -50px);
+  -webkit-transform: translate(50px, -30px);
+  -moz-transform: translate(50px, -50px);
+  -ms-transform: translate(50px, -50px);
+  -o-transform: translate(50px, -50px);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+main .slider .button img {
+  cursor: pointer;
+}
+@media (max-width: 830px) {
+  main {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -ms-transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .parent {
+    max-width: 400px;
+  }
+  .text {
+    text-align: center;
+    max-width: 400px !important;
+  }
+  .job {
+    text-align: center;
+  }
+}
